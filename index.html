@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The World Wide Web Project</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background: linear-gradient(to bottom right, #fefae0, #f4f4f4);
+      color: #1a1a1a;
+      line-height: 1.7;
+    }
+
+    header {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-weight: 800;
+      color: #000;
+      font-size: 2.5rem;
+    }
+
+    a {
+      color: #0066cc;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    a:hover {
+      color: #003d99;
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      background-color: #ffffff;
+      padding: 2.5rem;
+      border-radius: 18px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    ul {
+      padding-left: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.875rem;
+      color: #777;
+      text-align: center;
+    }
+
+    .quote {
+      font-style: italic;
+      color: #555;
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    .stats {
+      margin-top: 3rem;
+      padding: 1rem;
+      background: #f0f0f0;
+      border-radius: 12px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      font-weight: 600;
+    }
+
+    .stats div {
+      background: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    .replica-box {
+      margin-top: 3rem;
+      background: #c0c0c0;
+      border: 4px solid #000080;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 0.9rem;
+      color: black;
+      box-shadow: inset -1px -1px 0 #fff, inset 1px 1px 0 #000;
+    }
+
+    .replica-titlebar {
+      background: #000080;
+      color: white;
+      padding: 0.4rem 0.6rem;
+      display: flex;
+      font-size: 0.85rem;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .replica-content {
+      background: white;
+      border: 2px inset #808080;
+      padding: 1rem;
+    }
+
+    .replica-content h2 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .replica-content ul {
+      padding-left: 1.2rem;
+    }
+
+    .replica-content a {
+      color: blue;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .stats {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>The World Wide Web Project</h1>
+    </header>
+
+    <p>The WorldWideWeb (W3) is a wide-area hypermedia information retrieval initiative aiming to give universal access to a large universe of documents.</p>
+
+    <p>Everything there is online about W3 is linked directly or indirectly to this document, including:</p>
+
+    <ul>
+      <li><a href="#">Project history</a></li>
+      <li><a href="#">Technical details</a></li>
+      <li><a href="#">Hypertext news</a></li>
+      <li><a href="#">Software products</a></li>
+      <li><a href="#">How to create your own web server</a></li>
+      <li><a href="#">Frequently asked questions</a></li>
+    </ul>
+
+    <p>This project was initiated by <strong>Tim Berners-Lee</strong> at CERN in 1991.</p>
+    <p><a href="#">Learn how to build your own hypertext browser</a>.</p>
+
+    <div class="quote">“The Web is more a social creation than a technical one.” – Tim Berners-Lee</div>
+
+    <div class="stats">
+      <div>🌐 Sites Created: <span id="sitesCreated">Loading...</span></div>
+      <div>💀 Sites Dead: <span id="sitesDead">Loading...</span></div>
+      <div>💰 Money Made: <span id="moneyMade">Loading...</span></div>
+      <div>👶 Births Caused: <span id="birthsCaused">Loading...</span></div>
+      <div>⚰️ Deaths Caused: <span id="deathsCaused">Loading...</span></div>
+    </div>
+
+    <div class="replica-box">
+      <div class="replica-titlebar">
+        <span>Hypertext Viewer</span>
+        <div>[ _ ] [ ▢ ] [ X ]</div>
+      </div>
+      <div class="replica-content">
+        <h2>The World Wide Web project</h2>
+        <p>The WorldWideWeb (W3) is a wide-area hypermedia information retrieval initiative aiming to give universal access to a large universe of documents.</p>
+        <p>Everything there is online about W3 is linked directly or indirectly to this document, including:</p>
+        <ul>
+          <li><a href="#">Project history</a></li>
+          <li><a href="#">Technical details</a></li>
+          <li><a href="#">Hypertext news</a></li>
+          <li><a href="#">Software products</a></li>
+          <li><a href="#">How to create your own web server</a></li>
+          <li><a href="#">Frequently asked questions</a></li>
+        </ul>
+        <p>This project was initiated by Tim Berners-Lee at CERN, and now hosted by the World Wide Web Consortium.</p>
+      </div>
+    </div>
+
+    <footer>
+      Tribute version &copy; 2025 — Inspired by the original at <a href="https://info.cern.ch/">info.cern.ch</a>
+    </footer>
+  </main>
+
+  <script>
+    function randomBase(min, max) {
+      return Math.floor(Math.random() * (max - min)) + min;
+    }
+
+    function animateCount(id, base, ratePerSecond) {
+      const el = document.getElementById(id);
+      let count = base + Math.floor((Date.now() / 1000) * ratePerSecond);
+      setInterval(() => {
+        el.textContent = count.toLocaleString();
+        count += ratePerSecond;
+      }, 1000);
+    }
+
+    animateCount("sitesCreated", randomBase(800000000, 1000000000), 3);
+    animateCount("sitesDead", randomBase(300000000, 500000000), 1);
+    animateCount("moneyMade", randomBase(100000000000, 200000000000), 50000);
+    animateCount("birthsCaused", randomBase(1000000, 3000000), 0.01);
+    animateCount("deathsCaused", randomBase(100000, 300000), 0.005);
+  </script>
+</body>
+</html>
